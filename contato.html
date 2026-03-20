@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+        <div id="titulo_principal"> 
+            <h1>O Senhor dos Anéis - O filme legal</h1>
+            <h2>Uma das trilogias mais famosas do cinema</h2>
+            <table border="2">
+                <tr>
+                    <tbody>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="sinopse.html">Sinopse</a></td>
+                    <td><a href="imagemfilme.html">Imagem do Filme</a></td>
+                    <td><a href="personagens.html">Personagens Principais</a></td>
+                    <td><a href="informacoes.html">Informações</a></td>
+                    <td><a href="ordemfilmes.html">Ordem dos Filmes</a></td>
+                    <td><a href="curiosidades.html">Curiosidades</a></td>
+                    <td><a href="contato.html">Contato</a></td>
+                    </tbody>
+                </tr>
+            </table>
+        </div>
+        <h2 class="titulo_secundario">Entre em contato:</h2>
+        <form action="" method="" autocomplete="off">
+            <label for="nomepessoa">Nome:</label> <br>
+            <input type="text" name="nome" id="nomepessoa" minlength="3" maxlength="15" required placeholder="Informe seu nome" size="30">
+                <br> <br>
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email" required placeholder="Informe seu endereço de email" size="30">
+                <br> <br>
+            <label for="ano">Ano de Nascimento:</label> <br>   
+            <input type="email" id="ano" name="ano" max="2026" min="1900" placeholder="Informe seu ano de nascimento" size="30">
+                <br> <br>
+            <label for="telefone">Telefone</label> <br>
+            <input type="tel" name="telefone" id="telefone" placeholder="Informe seu número de telefone" size="30">
+                <br> <br>
+            <label>Informe seu github:</label> <br>
+            <input type="url" name="github" id="github" placeholder="Informe o link do seu github" size="30">
+                <br> <br>
+            <label for="senha">Informe sua senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Informe sua senha" size="30">
+            <br> <br>
+            <label for="cor">Informe sua cor favorita:</label><br>
+            <input type="color" id="cor" name="cor" placeholder="Informe sua cor favorita" size="30">
+            <br> <br>
+            <label for="arquivo">Suba um arquivo:</label><br>
+            <input type="file" id="file" name="arquivo" placeholder="Suba um arquivo" size="30">
+            <br> <br>
+            <label for="data">Informe o dia de hoje:</label><br>
+            <input type="date" id="data" name="data" placeholder="Informe o dia de hoje" size="30">
+            <br> <br>
+            <label for="datahora">Data e hora atual:</label><br>
+            <input type="datetime-local" id="datahora" name="datahora" size="30">
+            <br> <br>
+            <label for="pesquisa">Pesquisa</label> <br>
+            <input type="search" id="pesquisa" name="pesquisa" size="30">
+            <br> <br>
+            <label for="descricao">Informe aqui o que você gosta!</label> <br>
+            <textarea cols="22" rows="8" name="descrição" id="descricao"></textarea>
+            <br> <br>
+            <button type="submit">Enviar!</button>
+            
+        </form>
