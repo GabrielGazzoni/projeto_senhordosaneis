@@ -63,6 +63,40 @@
             <label for="descricao">Informe aqui o que você gosta!</label> <br>
             <textarea cols="22" rows="8" name="descrição" id="descricao"></textarea>
             <br> <br>
+            <label for="nivel">Escolha o nível</label> <br>     
+            <input type="range" max="10" min="1" id="nivel" name="nivel">
+
+            <fieldset>
+                <legend>Desenvolvimento para internet</legend>
+                <label><input type="checkbox" name="php" value="php">PHP</label>
+                <label><input type="checkbox" name="html5" value="html5">HTML5  </label>
+                <label><input type="checkbox" name="css" value="css">CSS</label>
+                <label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+            </fieldset>
+            <br> <br>
+            <!--Datalist maneira-->
+            <input type="text" id="busca_datalist" list="paises">
+
+            <datalist id="paises">
+                <option>Brasil</option>
+                <option>França</option>
+                <option>Alemanha</option>
+                <option>Argentina</option>
+                <option>Papua Nova Guiné</option>
+            </datalist>
+            <br> <br> <br>
+
+            <audio controls muted autoplay loop>
+                <source src="audio/musica.mp3" type="audio/mp3">
+            </audio>
+        <br> <br> <br>
+            <video controls loop muted poster="img/bruno.png">
+                <source src="video/videoteste.mp4" type="video/mp4">
+            </video>
+            <br> <br> <br>
+            <iframe widht="560" height="315" src="https://youtu.be/t15B4S60Mo0?si=Aqy4bYLeM72xcYrF" title="Video Legal" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="stick-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br> <br>
             <button type="submit">Enviar!</button>
             
         </form>
