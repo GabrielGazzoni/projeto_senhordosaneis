@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+        <div id="titulo_principal"> 
+            <h1>O Senhor dos Aneis</h1>
+            <h2>Uma das trilogias mais famosas do cinema!</h2>
+            <table border="2">
+                <tr>
+                    <tbody>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="sinopse.html">Sinopse</a></td>
+                    <td><a href="imagemfilme.html">Imagem do Filme</a></td>
+                    <td><a href="personagens.html">Personagens Principais</a></td>
+                    <td><a href="informacoes.html">Informações</a></td>
+                    <td><a href="ordemfilmes.html">Ordem dos Filmes</a></td>
+                    <td><a href="curiosidades.html">Curiosidades</a></td>
+                    <td><a href="contato.html">Contato</a></td>
+                    <td><a href="projetotrabalho.html">Trabalho de DI</a>
+                    </tbody>
+                </tr>
+            </table>
+        </div>
+
+        <h2 class="titulo_secundario">Contato com a Terra Média:</h2>
+        <p>Envie sua mensagem diretamente para o Conselho de Elrond</p>
+        <form action="" method="" autocomplete="off">
+            <!--Formulário de nome-->
+            <label for="nomepessoa">Nome do Personagem:</label> <br>
+            <input type="text" name="nome" id="nomepessoa" minlength="3" maxlength="15" required placeholder="Ex. Bilbo" size="30">
+                <br> <br>
+            <!--Formulário de Email-->
+            <label for="email">Corvo Eletrônico (Email):</label> <br>
+            <input type="email" name="email" id="email" required placeholder="Informe um email" size="30">
+                <br> <br>
+            <!--Aceita apenas ano de nascimento com idade mínima e máxima-->
+            <label for="ano">Ano de Nascimento:</label> <br>   
+            <input type="year" id="ano" name="ano" max="2026" min="1900" required placeholder="Informe seu ano de nascimento" size="30">
+                <br> <br>
+            <!--Campo para selecionar apenas uma das opções em Radio-->
+            <fieldset>
+            <label for="raca">Qual é a sua raça?</label> <br>
+            <input type="radio" name="raca" value="Humano" id="raca1"><label for="raca1">Humano</label>
+            <input type="radio" name="raca" value="Elfo" id="raca2"><label for="raca2">Elfo</label>
+            <input type="radio" name="raca" value="Anão" id="raca3"><label for="raca3">Anão</label>
+            <input type="radio" name="raca" value="Hobbit" id="raca4"><label for="raca4">Hobbit</label>
+            </fieldset>
+                <br> <br>
+            <!--Campo para selecionar apenas uma opção em uma lista flutuante-->
+            <label for="personagens">Escolha seu filme favorito:</label>
+            <select required id="filme">
+                <option value="Filme1">A Sociedade do Anel</option>
+                <option value="Filme2">As Duas Torres</option>
+                <option value="Filme3">O Retorno do Rei</option>
+            </select>
+                <br><br>
+            <!--Campo para selecionar apenas uma opção em uma lista flutuante separada por grupos-->
+            <label for="personagens">Escolha seu filme favorito:</label>
+            <select required id="filme">
+                <optgroup label="Reino dos Humanos">
+                    <option value="gondor">Gondor</option>
+                    <option value="rohan">Rohan</option>
+                </optgroup>
+                <optgroup label="Terras dos Elfos">
+                    <option value="valfenda">Valfenda</option>
+                    <option value="lothlórien">Lothlórien</option>
+                </optgroup>
+                <optgroup label="Outros">
+                    <option value="mordor">Mordor</option>
+                    <option value="condado">Condado</option>
+                </optgroup>
+            </select>
+                <br><br>
+            <!--Campo que permite selecionar mais de uma opção-->
+            <fieldset>
+                <legend>Suas Habilidades</legend>
+                <label><input type="checkbox" name="espada" value="espada">Espadas</label>
+                <label><input type="checkbox" name="arco" value="arco">Arco e Flecha</label>
+                <label><input type="checkbox" name="magia" value="magia">Magia</label>
+                <label><input type="checkbox" name="furtividade" value="furtividade">Furtividade</label>
+            </fieldset>
+                <br> <br>
+            <!--Inserir um valor inteiro entre 1 e 10-->
+            <label for="coragem">Nível de Coragem (1 a 10)</label> <br>     
+            <input type="range" max="10" min="1" id="coragem" name="coragem">
+                <br> <br>
+            <!--Lista, porém, você pode escrever nela, tendo sugestões de data-->
+            <label for="origem">Reino de Origem</label> <br>
+            <input type="text" id="origem" list="origemreino">
+            <datalist id="origemreino">
+                <option>Gondor</option>
+                <option>Rohan</option>
+                <option>Mordor</option>
+                <option>Condado</option>
+            </datalist>
+                <br> <br>
+            <!--Selecionar uma cor por código hex)-->
+            <label for="cor">Cor de seu manto:</label><br>
+            <input type="color" id="cor" name="cor" placeholder="Informe a Cor" required size="30">
+                <br> <br>
+            <!--Selecionar data completa-->
+            <label for="data">Data de sua jornada:</label> <br>   
+            <input type="date" id="data" name="data" required placeholder="Informe a data de sua jornada" size="30">
+                <br> <br>
+            <!--Upload de arquivo-->
+            <label for="arquivo">Anexe a Aparência de seu Personagem:</label><br>
+            <input type="file" id="file" name="arquivo" placeholder="Suba um arquivo" size="30">
+            <br> <br>
+            <!--Campo para escrever com tamanho limitado-->
+            <label for="descricao">Deixe uma Mensagem ao Conselho!</label> <br>
+            <textarea cols="30" rows="5" name="descrição" id="descricao"></textarea>
+            <br> <br>
+            <button type="reset">Apagar Pergaminho</button>
+            <button type="submit">Enviar para o Conselho</button>
