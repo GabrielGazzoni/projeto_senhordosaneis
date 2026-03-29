@@ -87,11 +87,11 @@
                 <br> <br>
             <!--Inserir um valor inteiro entre 1 e 10-->
             <label for="coragem">Nível de Coragem (1 a 10)</label> <br>     
-            <input type="range" max="10" min="1" id="coragem" name="coragem">
+            <input type="range" max="10" min="1" id="coragem" required name="coragem">
                 <br> <br>
             <!--Lista, porém, você pode escrever nela, tendo sugestões de data-->
             <label for="origem">Reino de Origem</label> <br>
-            <input type="text" id="origem" list="origemreino">
+            <input type="text" id="origem" required list="origemreino">
             <datalist id="origemreino">
                 <option>Gondor</option>
                 <option>Rohan</option>
@@ -109,11 +109,11 @@
                 <br> <br>
             <!--Upload de arquivo-->
             <label for="arquivo">Anexe a Aparência de seu Personagem:</label><br>
-            <input type="file" id="file" name="arquivo" placeholder="Suba um arquivo" size="30">
+            <input type="file" id="file" name="arquivo" required placeholder="Suba um arquivo" size="30">
             <br> <br>
             <!--Campo para escrever com tamanho limitado-->
             <label for="descricao">Deixe uma Mensagem ao Conselho!</label> <br>
-            <textarea cols="30" rows="5" name="descrição" id="descricao"></textarea>
+            <textarea cols="30" rows="5" name="descrição" required id="descricao"></textarea>
             <br> <br>
             <button type="reset">Apagar Pergaminho</button>
             <button type="submit">Enviar para o Conselho</button>
