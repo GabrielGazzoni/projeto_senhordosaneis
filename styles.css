@@ -9,3 +9,10 @@
             }
     
        body {background-color:#FFFAAD} {}
+
+       #layout{
+        display: flex;
+       }
+       .rodape{
+        text-align: center;
+       }
