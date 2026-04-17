@@ -10,9 +10,10 @@
     
        body {background-color:#FFFAAD} {}
 
-       #layout{
+    #layout{
         display: flex;
-       }
-       .rodape{
+    }
+    
+    .rodape{
         text-align: center;
-       }
+    }
